@@ -1,9 +1,26 @@
 git init
 dir -a
+
+
 dir -h
 git status
 dir
 git add testing.py
+
+git rm --cached testing.py
+git add testing.py
+rm testing.py
+git restore testing.py
+git commit -m "this is dev branch"
+git status
+git switch dev
+git branch
+git status
+git status
+git add .
+git commit -m "now this is dev branch"
+git status
+
 git status
 git rm --cached testing.py
 git status
@@ -15,4 +32,5 @@ git commit -m "added testing files"
 git status
 rm testing.py
 git restore testing.py
+ master
 git status
